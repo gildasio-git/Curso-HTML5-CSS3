@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+    /*Parâmetro para utilizar degrade de 100% de cima para baixo*/
+    /* height: 100%; */
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+body{
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7)
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto; /*Centraliza a div main, indepdentente do tamanho da tela*/
+    border-radius: 10px; /*cantos arrendondados na div main */
+    box-shadow:5px 5px 15px #daa88bb4; /* parametro 1 = quando a sombra vai andar pro lado, parametro 2 = quando a sombra vai andar para baixo
+                  parâmetro 3 = quanto essa sombra vai espalhar, e último parâmetro é quanto de transparência essa sobra
+                  ira ter */
+}
+
+h1{
+    color: #f39209;
+    text-align: center;
+    text-shadow: 1px 1px 2px #d18152b4;/*parametro 1 = quando a sombra vai andar pro lado, parametro 2 = quando a sombra vai andar para baixo
+                                     parâmetro 3 = quanto essa sombra vai espalhar, e último parâmetro é quanto de transparência essa sobra
+                                     ira ter | mesmo do box shadow, porém agora para texto (text-shadonw */
+}
+
+h2{
+    color: #125189;
+}
+
+p{
+
+}

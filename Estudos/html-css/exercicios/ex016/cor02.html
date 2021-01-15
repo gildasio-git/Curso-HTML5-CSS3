@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+        /*Configuração globais das CSS*/
+        * {
+            height: 100%;
+        }
+      
+       body {
+           /*Necessita do bakground-imag
+            to top - para esse para não ficar zebrado, precsisa  conf. global acima
+            to right
+            to left 
+            
+            também pode usar em graus 
+
+            45deg ( ou outro valor desejado)
+
+            também pode alterar em vez de gradiente linear para 
+
+             - background-image: radial-gradient(circle, #3198e2, #6d56c0, #b93590, #e33f5f, #fdd579);
+            
+            também pode determinar uma porcentagem da cor 
+        
+             - background-image: linear-gradient(to right, #3198e2, #6d56c0, #b93590, #e33f5f, #fdd579);
+
+             Obs. procurar usar com moderação. 3 a 5.
+           */
+           background-image: linear-gradient(to right, #3198e2 1%, #6d56c0, #b93590, #e33f5f, #fdd579);
+           /*Background fixo, mesmo que mova o conteúdo á página não rola*/
+           background-attachment:fixed;   
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+
+</body>
+</html>

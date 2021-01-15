@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo Vídeos</title>
+</head>
+<body>
+
+    <h1>Reproduzindo Vídeos - Hospedados Localmente</h1>
+    <!--
+        HTML5 os padrões suportados são .m4v - que é o mesmo mp4, .mp4, .webm, .ogv
+
+        Fonte para Vídeos na internet.
+           https://www.pexels.com/pt-br/videos
+
+        Software para conversão de vídeos
+           Handbreak    
+
+        Os parâmetros são parecidos com a inclusão de áudios, porém alguns distinguem
+        como o caso do parâmetro
+        poster=você aponta uma capa para o vídeo. (imagem)
+    -->
+    <video width="500" poster="imagens/img-elvis.png" controls loop>
+        <source src="midias/v01.m4v" type="video/mp4">
+        <source src="midias/v01.mp4" type="video/mp4">
+        <source src="midias/v01.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <!--
+        OUTRA FORMA DE INSERIR VÍDEO que não gera tráfego e custos no seu servidor de hospedagem é inserindo vídeos
+        de repositórios como youtube ou vímeo. Para isso basta localizar o vídeo que deseja inserir no seu site e na opção
+        compartilhar você pode pegar o código de incorporar clicando na opção  "< >".
+
+        Obs:
+            animate reel (busca videos de animações no youtube)
+            observar direitos autorais.
+
+            Vímeo a qualidade do vídeo é um pouco melhor porém o algorítmo do yuoutube supera em termos de fluídez
+            no Vímeo ao final do vídeo não aparece propaganda de outros vídeos.
+    -->
+
+    <h1>Inserindo vídeos do youtube</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BNnX2rKIERI" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+
+</body>
+</html>

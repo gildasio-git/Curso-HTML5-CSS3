@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+         <!--
+             rel = HTML5 | reporta que é um link fora do seu site, abrindo em uma nova aba.
+             target = abra o link externo sem necessáriamente sair do seu site
+         -->
+        <p>Acesse o meu <a href="https://github.com/gildasio-git/TDI" target="_blank" rel="external">Repositório público no Github</a></p>
+
+    <h1>Usando links internos</h1>
+    <!--
+        Link internet faz uma relação de uma outra página dentro do nosso servidor.
+        Quanto você usa um link externo não necessita apontar a url inteira.
+        
+        rel="next" = tab HTML5, reporta próxima página.
+    -->
+    <p>Esta é a primeira página do site, caso queira, pode acessar também a <a href="pg002.html" rel="next">segunda página</a> </p>
+    
+    <!-- Lnk para uma página em outro diretório, no caso diretório NOTICIAS 
+     target : informa que abrirá a página em sua própria página, consierando que não ira para uma página externa
+     de terceiros.
+    -->
+    <P>você também pode acessar nossa página de <a href="noticias/pag003.html"  rel="next" target="_selv">notícias</a></P>
+
+    <h1>Links para Donwloads</h1>
+    <!--
+        type="application/pdf" 
+            fonte:https://www.iana.org/assignments/media-types/media-types.xhtml  | possui a lista de todos os 
+                  mídias types.
+        esses parâmetros type, e donwload faz com  que o navegador solicite o donwload.
+    -->
+    <ol>
+        <li><a href="pdf/FormulariosNoAccess.pdf.gz" download="FormulariosNoAccess.pdf.gz" type="apllicationi/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="#"></a>Livro compactado em ZIP</li>
+    </ol>
+</body>
+</html>

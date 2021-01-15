@@ -1,0 +1,93 @@
+HARMONIA DE CORES
+
+Círuclo Cromático
+
+CORES PRIMÁRIAS
+    Amarelo, Vermelho e Azul.
+
+CORE SECUNDÁRIAS
+    Verde, Laranja e Violeta
+
+CORES TERCEÁRIAS
+    É o resultado da mistura das cores primárias e secundárias.
+    ao nomear uma cor terceária, coloque primeiro o nome da cor primárias
+    e após o nome da cor TECEÁRIA 
+
+    Exemplos:
+        amarelo-esverdeado
+        amarelo-alaranjado
+        vermelho-alaranjado
+        vermelho-arroxeado
+        azul-esverdeado
+        azul-arroxeado
+        amarelo-esverdeado
+    
+TEMPERATURA DE CORES
+    
+        Lado esquerdo do  cículo cromático (CORES FRIAS )
+        Lado direito do círculo cromático (CORES QUENTES)
+    
+PALETA DE CORES
+        de 3 a 5 cores no máximo
+        obs. caso tenha uma logo, observar a cor primária dessa logo.
+    
+
+CORES COMPLEMENTARES 
+        São aquelas que contém mais CONTRASTES entre sí, a exemplo uma cor que mais contrasta 
+        com marron: basta traçar uma oposta a ela. (EXTREMO OPOSTO) no círculo cromático.
+
+
+CORES ANÁLOGAS
+        São cores que não tem contraste tão grandes mais são peceptíveis, a exemplo, para saber
+        as cores análogas do marrom, basta escolher as cores ao lago no cículo cromático.
+       
+CORES ANÁLOGAS RELACIONADAS
+        Escolha duas cores análogas com similiaridade. e pule uma casa no círculo cromático para uma outra cor.
+
+
+CORES INTERCALADAS 
+        Parecidas com as ANÁLOGAS RELACIONADAS porém com um contraste maior, para isso 
+        no cículo cromático, basta pegar uma core de referência, pular uma cor ao lado pegando essa cor 
+        e novamente pular outra cor, assim forma uma paleta com 3 cores com cores similares.
+
+CORES TRIÁDICAS
+        Da mesma forma das cores INTERCALADAS, no cículo cromático estolha uma tonalidade cor 
+        para direita ou para a esquerda, pule 03 (três) cores, novamente pule mais 03(trẽs) e 
+        escolha a outra cor.
+
+
+CORES EM QUADRADO
+        Seguindo o mesmo princío das anteriores, você escolhe uma cor no cículo cromático e 
+        pule duas cores, e novametne mais duas cores, ira notar que formará um quadrado 
+        dentro do círculo cromático.
+
+CORES TETRÁTICAS
+        No círculo cromático escolha quelquer cor, ai escolha a cor complementar da cor escolhida
+        o extremo oposto, escolha uma outra tonalidade e como na primeira cor escolha o extremo oposto
+        assim formara um retângulo dentro do círculo cromático.(DEGRADE)
+
+MONOCRAMIA
+
+        Trabalha com uma cor somente, escolhendo uma tonalidade e usando os parâmetros HSL
+        matiz, saturação e luminosidade você conseguirá obter outras tonalidades.
+
+
+MONTANDO PALETA DE CORES
+
+obs: CMYK - para impressoas
+
+sites para gerar paleta de cores:color.adobe.com | paletton.com  | coolors.co
+
+CAPTURANDO CORES DE UM SITE 
+
+       No navegador Google Chrome pesquise por uma extensão chamada "Colorzila", com essa extensão 
+após isso basta acessar o site que deseja capturar a cor, basta clicar no conta gotas na parte 
+superior e clique na cor desejada, dessa forma o código Hex será copiado.
+
+
+
+
+
+ 
+
+

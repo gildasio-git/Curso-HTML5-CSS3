@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <!-- Inserindo imagens flexíveis-->
+    <picture>
+        <!-- parẫmetro source determina um tamanho máximo para 1000 pximagem, caso diminua
+        automaticamente a imagem menor será carregada, no casmo a foto-m.png que esta na pasta
+        da mesma forma vale para a imagem pequena-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--Inserindo audio
+    Fonte: youtube studio, biblioteca de audio, e pesquisar por atribuição não necessária.
+    https://studio.youtube.com/channel/UC5iMqJlNJjHXrimdr4hFduA/music
+
+    Obs: cuidados com direitos autorais
+    -->
+
+    <h1>Reproduzindo audio em HTML5</h1>
+        <!-- controls => habilita os controles
+        autoplay => reproduz automaticamente-->
+        <audio src="midia/Suspicious.mp3" controls autoplay></audio>
+
+    <!-- outra forma de inserção de audio -->
+    <audio preload="metadata" controls loop>
+        <!-- tenta carregar na sequẽncia, primeiro mp3 e assim por diante
+        caso não consiga carregar nehum dos arquivos de áudio exibira uma msg
+
+        Parâmetros:
+                    preload="medadata" | use esse padrão, nunca use como auto, pois influenciará no carregamento 
+                             do seu site.
+                    loop: mantém música de fundo.
+                    obs: tente não usar arquivos wav, devido serem muitos pesados, qualidade fica para donwload, não
+                          não para sites.
+    -->
+        <source src="midia/Suspicious.mp3" type="audio/mp3"> 
+        <source src="midia/Suspicious.ogg" type="audio/ogg"> 
+        <source src="midia/Suspicious.wav" type="audio/wav">
+
+            <p>Infelizmente seu navegador não conseguiu reproduzir nehum dos audios listados
+                <a href="midia/Suspicious.mp3">
+                    clique aqui para baixar seu arquivo mp3
+                </href>
+            </p>
+    </audio>
+
+    
+</body>
+</html>
