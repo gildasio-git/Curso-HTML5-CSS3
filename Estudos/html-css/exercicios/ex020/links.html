@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Alterando a cor do link*/
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+
+        }
+
+        /*Quando clicado*/
+        a:active{
+            color: yellow;
+        }
+        
+        /*
+            PSEUDO ELEMENTS
+               Pode agir nas classes nos elementos, no conteúdo. 
+            ::=Indica pseudo elmentos.
+        */
+
+        /*EXEMPLO*/
+        /*Depois de todos os links acimam informa que é um link
+        ao visitante
+        Pode pesquisar por símbolos para inserir caso deseje:
+         
+        RESUMO
+        #  = id
+        .  = class
+        :: = pesudo elements
+        :  = pseudo class
+        >  = shildrem (filho)
+        */
+
+        .especial::before{
+            content: ' <= ';
+        }
+        .especial::after{
+            content: ' => ';
+        
+        }
+
+        .especial{
+            background-color: darkgray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="#" target="_blank">Repositório GitHub</a></li>
+        <!--usando pseudo elementos para identificar link especial-->
+        <li><a href="#" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="#" target="_blank">Repositório GitHub</a></li>
+    </ul>
+</body>
+</html>

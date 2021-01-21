@@ -8,38 +8,52 @@
 </head>
 
 <body>
-    <!-- Aplicando uma identificação para o  h1
+
+    <!-- 
+         Em HTML é id = em CSS é # (só pode um elemento em uma mesma página)
+         Em HTML é class = em CSS é . (pode vários elementos)
+
+         Aplicando uma identificação para o  h1
          assim consegue personalizar especificamente esse h1
-    -->
-    <h1 id="principal">Criando Sites com HTML e CSS</h1>
 
-    <h1>Aprendendo HTML </h1>
+         Em um documento HTML só podemos ter um elemento com ID, exemplo se ja usou 
+         o "id principal" não poderá utilizar nos demais, vai funcionar caso use? vai. Mais a recomendação
+         da W3C e que não utilize o mesmo id para mais de um elemento na página.
+    
+         span - Apenas uma parte do texto.
 
-    <h2>HTML básico</h2>
+         Obs: Você pode adicionar mais de uma CLASS a um elemento.
+              da mesma forma pode adicionar uma CLASS a uma div, lembrando que id sobrepõe configurações de class.
+        -->
+    <h1 id="principal" class="destaque"></h1>Criando Sites com HTML e CSS</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
-        laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.
-    </p>
+    <h1 class="avancado">Aprendendo HTML </h1>
 
-    <h2>HTML Avançado</h2>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
-        laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.
-    </p>
-
-    <h2>CSS Básico</h2>
+    <h2 class="basico">HTML básico</h2>
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
         laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.
     </p>
 
-    <h2>CSS Intermediário</h2>
+    <h2 class="avancado">HTML Avançado</h2>
+
+    <p>Lorem ipsum dolor sit <span class="destaque">amet consectetur</span>, adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
+        laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.
+    </p>
+
+    <h2 class="basico">CSS Básico</h2>
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
         laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.
     </p>
 
-    <h2>CSS Avançado</h2>
+    <h2 class="intermediario">CSS Intermediário</h2>
+
+    <p>Lorem ipsum dolor sit <span class="basico">spanamet consectetur</span> adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
+        laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.
+    </p>
+
+    <h2 class="avancado destaque">CSS Avançado</h2><!-- Duas classes aplicadas aqui, avancado e destaque (com cor de fundo)-->
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad repellat voluptatum voluptate ipsam aliquam beatae eius consequatur 
         laborum ipsum rerum magni cupiditate quos, officia delectus deleniti, magnam corrupti nobis et.

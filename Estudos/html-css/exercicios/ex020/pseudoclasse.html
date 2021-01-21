@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo Pseudo-Classes</title>
+
+    <style>
+        div{
+            background-color: lightgrey;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black; /*shorthand aplicando configuração em uma mesma linha*/
+            display: inline-block; /*Tudo na mesma linha */
+        }
+
+        /*Pseudo classe | #=id, .=class, :=pseudoclass
+          as pseudoclasses precisam estar relacionadas a um elemento ou a uma CLASS
+          PSEUDOCLASS esta relacionado ao estado de um determinado elemento.
+          se esta MARCADO, ATIVO, VAZIO.... etc
+
+          Exemplo:
+          div:hover (PSEUDOCLASS) - Que siginfica quando eu passar o mouse por cima.
+
+        */
+
+        div:hover{
+            background-color: darkkhaki;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+        <!-- DIV -> Espaço qualquer -->
+        <div id="d1">01</div>
+        <div id="d2">02</div>
+        <div id="d3">03</div>
+</body>
+</html>
