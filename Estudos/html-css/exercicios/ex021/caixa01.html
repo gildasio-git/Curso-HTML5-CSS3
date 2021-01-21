@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px; /*Espessura da borda*/
+            border-style: solid; /*Tipo da borda*/
+            border-color: darkgray;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+          
+            /*
+              Ordem dos PADDING cima, direita, baixo, esquerda.
+              
+              DEERMINANDO PARA TODOS OS LADOS PADDING E MARGIN
+
+              padding:10px; vale para todos os lados
+              margin:10px;  vale para dosos os lados
+
+              OUTRA MANEIRA DE RESUMIR OS PADDING E MARGIN EM UMA LINHA 
+
+              padding:10px 20px; determina 10px para superior, 10px para inferior, 10px para direita e 10 px esquerda
+              margin:10px 10px;
+            */
+
+            /*MARGENS*/
+
+            /* margin:10px 10px 10px 10px; /*Shorthand | propriedades de múltiplos valores*/
+
+            margin: auto; /*Centralizando o BOX*/
+
+            /*Definindo uma borda outline dentro da margin*/
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+        
+        a{
+            border-style: dashed;
+            border-width: 2px;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- MODELO DE CAIXAS BOX-LEVEL
+         alguns parâmetros CSS são préviamente configurados pelo 
+         própio navegador pelo "USER AGENT Todo navegador tem uma configuração básica
+         que é seguida por todos eles"
+    -->
+    <h1>Exemplo de caixas BOX-LEVEL</h1>
+    <p>Parágrafos também são eemplox de box-level, mais os <a href="#">links são 
+        exemplos de caixa INLINE-LELVE.</a> Vamos ver como funciona:) </p>
+</body>
+</html>

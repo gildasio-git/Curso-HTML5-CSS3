@@ -1,0 +1,44 @@
+BOX MODELS (MODELOS DE CAIXAS)
+
+Propriedades (todo elemento possui uma caixa)
+
+MARGIN: Margem externa
+PADDING: Acolchoamento interno (espeçamento) para descolar a borda do elemento
+OUTLINE: Contorno e/ou traçado. fora do elemento.
+BORDER: Borda definida Dentro do elemento.
+
+MODELOS DE BOX
+
+BOX-LEVEL: Caixa dentro de uma uma outra, porém iniciando em uma linha nova, caso tenha um parágrafo interno.
+           uma característica do BOX-LEVEL é que sempre ocupa a largura total da tela do navegador. 100% viewport.
+           Exemplo de BOX-LEVEL é uma DIV. 
+
+INLINE-LEVEL: Diferentemente do BOX-LEVEL ele não pula uma linha, desenha a caixa do lado, como não também quebra a linha       
+              nem ocupa a largura inteira. exemplo de uso é um SPAN, quando não quero quebrar linha, e o próximo elemento esteja do lado.
+
+
+Exemplos de BOX-LEVEL
+<div>
+<h1> - <h6>
+<p>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+<audio> 
+
+Exemplos de INLINE-LEVEL
+<span>
+<articlecode>
+<small>
+<strong>
+<em>
+<sup - sub>
+<label>
+<button>
+<input>
+<select>
+
