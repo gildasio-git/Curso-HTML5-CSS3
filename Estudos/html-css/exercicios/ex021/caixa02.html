@@ -21,6 +21,8 @@
         nav{
             background-color: rgb(71, 65, 65);
             padding: 3px;
+            box-shadow: 5px 5px 7px 1px rgba(163, 163, 163, 0.336);           
+
         }
 
         nav > a{
@@ -28,26 +30,35 @@
             color: white;
             font-weight: bold;
             margin-right: 20px;
+            
         }
 
         nav > a:hover{
             text-decoration: underline;
            
-
         }
 
         main{
             background-color: white;
             padding: 10px;
             margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.438);
+           
         }
 
         footer{
             background-color: black;
             color: white;
             margin: 0px;
-            padding: 1px;
+            padding: 4px;
             text-align: center;
+        }
+
+        /*Remove problema do marigin do parágrafo p do footer
+        que esta somando ao 1 px do paddind de 1px  */
+        footer > p{
+            margin: 0px;
         }
 
         article{
@@ -58,6 +69,16 @@
         article > aside{
             background-color: rgb(211, 211, 211);
         }
+
+       /*
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin:10px;
+            border-radius: 50%;/*transformando div em bola*/
+        }
+        */
 
     </style>
 </head>
@@ -102,5 +123,11 @@
     <footer>
         <p>Desenvolvimento HTML 5</p>
     </footer>
+   
+    <!-- Exemplo usado para gear uma div e transformar em bola.
+    <div id="bola">
+
+    </div>
+    -->
 </body>
 </html>
