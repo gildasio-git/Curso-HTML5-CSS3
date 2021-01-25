@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        /*
+            Instalar no chrome a partir do chrome webstore
+            o complmento windwos resizer.   
+        */
+        body{
+            background-color: gray;
+
+        }
+
+        main{
+           background-color: white;
+           padding: 20px;
+           border-radius: 10px;
+
+
+           /*
+            propriedades LARGURA MINIMA e LARGURA MINIMA
+            para responsividade:
+            min-widht
+            max-widht
+            Porém imagens mesmo com essas propriedades continuarão
+            quebrando. 
+            
+           */
+           min-width:320px; /*320 largura de celulares bem antigos*/
+           max-width: 800px;
+           margin: auto;
+        }
+        /*
+        Resolvendo a responsividade da imagem
+        também pode  envelopar a imagem
+        do conteúdo do seu HTML em tag "picture" e 
+        aplicar as configurações abaixo: 
+
+        "
+        <picture>
+         <source media="max-widht:800px" srcset="imagens/irina-blok-pq.jpg">
+         <img src="imagens/irina-blok.jpg" alt="">
+         </picture>
+        */
+        img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Testando responsividade</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sapiente repudiandae dicta odio consequatur. Tempora ipsam eos excepturi alias! Veritatis provident ut quo quibusdam 
+     dolorem debitis molestiae itaque accusamus voluptas.
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta consequatur doloribus sint deserunt commodi iure reprehenderit provident, vitae tempora corporis assumenda velit fugiat 
+     dolore. Expedita excepturi suscipit ipsa fuga.
+     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolor, fugit soluta voluptatem laborum sunt repudiandae eaque maxime officiis omnis possimus, molestias odit? Quisquam fuga 
+     temporibus dolorem ea aut pariatur?</p>
+     <picture>
+         <source media="(max-widht:800px)" srcset="imagens/irina-blok-pq.jpg">
+         <img src="imagens/irina-blok.jpg" alt="">
+     </picture>
+
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore sapiente repudiandae dicta odio consequatur. Tempora ipsam eos excepturi alias! Veritatis provident ut quo quibusdam 
+        dolorem debitis molestiae itaque accusamus voluptas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta consequatur doloribus sint deserunt commodi iure reprehenderit provident, vitae tempora corporis assumenda velit fugiat 
+        dolore. Expedita excepturi suscipit ipsa fuga.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolor, fugit soluta voluptatem laborum sunt repudiandae eaque maxime officiis omnis possimus, molestias odit? Quisquam fuga 
+        temporibus dolorem ea aut pariatur?</p>
+    </main>
+</body>
+</html>
