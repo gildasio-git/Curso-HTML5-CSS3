@@ -51,31 +51,74 @@ body{
    font-family: var(--fonte-padrao);
 }
 
+/*Configurando links externos
+  com CLASSE.
+  observer o after(após) com um espaço (00A0).
+*/
+a.externo::after{
+   content: '\1F517\00A0';
+
+}
+
 header{
-   background-color: var(--cor4);
+   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5) ); /*Background gradiente*/
+   min-height: 150px; /*Adequar visualização em qualquer dispositivo*/
+   text-align: center;
+   padding-top: 40px;
+
 }
 
 header > p{
    color: white;
+   margin:auto; /*centraliza*/
+   padding-right: 10px;
+   padding-left: 10px;
+   max-width: 500px; /*Determina largura máxima */
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+
 }
 
 
 header > h1{
    color:white;
    font-family: var(--fonte-destaque);
-
+   margin-bottom: 20px;
+   font-family: var(--fonte-padrao);
+   font-size: 1,3em;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+  
+  
 }
 
 nav{
-   background-color: --var(--cor5);
+   background-color: var(--cor5);
+   padding: 10px;
+   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.562);
 }
+
+/*Estilizando LINK dentro de nav*/
+nav > a{
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 5px; /*Arredondamento dos cantos*/
+   transition-duration:0.5s; /*Aplica um tempo de transição ao efeito*/
+}
+
+/*Efeito ao mover o mouse sobre o menu (link)*/
+nav > a:hover{
+   background-color: var(--cor3);
+   color:var(--cor5);
+}
+
 
 /*Conteúdo principal*/
 main{
 
    min-width: 300px;
    max-width: 1000px;
-   margin: auto;/*centralizad conteúdo principal*/
+   margin: auto;/*centraliza o conteúdo principal*/
    padding: 20px; /*alcochoamento das margens do conteúdo principal*/
    margin-bottom: 30px; /*Margem do rodapé, para não ficar colado no conteúdo principal*/
    border-bottom-left-radius: 10px;
@@ -92,6 +135,10 @@ main  h1{
 
 main h2{
    font-family: var(--fonte-android);
+   color: var(--cor4);
+   font-size: 1.3em;
+   background-image: linear-gradient(to right, var(--cor1), transparent);
+   text-indent: 10px;
 }
 
 /*Configurando as imagens dentro do main*/
@@ -102,7 +149,7 @@ main img{
 
 /*Configura a imagem do conteúdo main com a classe pequena*/
 main img.pequena{
-   width: 50%; /*reduz 50% do tamanho da imagem*/
+   max-width:350px ; /*Ao reduzir a imagem ao chegar a 350px manterá esse tamanho (largura*/
 
    /*alinhando a imagem ao centro, como não se trata de um conteúdo que não é um bloco
    não resolve cologar margin como auto
@@ -113,7 +160,96 @@ main img.pequena{
 
 }
 
+
+/*Configuração de parágrafo dentro do main em qualquer nível (não usar o main > P*/
+main p{
+   margin:15px 0px; /*Defini margem entre os parágrafos*/
+   text-align: justify;
+   text-indent:30px;/*Recuo dos parágrafos*/
+   line-height:2em; /*Altura da linha (espaços entre as linhas*/
+   font-size: 1.1em; /*Tamanho do texto consdierando o espaço entre linhas*/
+   
+}
+
+/*Configura tudo que estiver em negrito*/
+main strong{
+   color: var(--cor4);
+   font-weight: bold;
+   background-color: var(--cor1);
+   padding: 2px 6px;
+
+}
+
+/*Configura os links do conteúdo (main)*/
+main a{
+   text-decoration: none;
+   font-weight: bold;
+   color:var(--cor5);
+   background-color: var(--cor1);
+   padding: 3px 6px;
+}
+
+
+/*Configura links do main*/
+main a:hover{
+ text-decoration: underline;
+ color: var)var(--cor3);
+
+}
+
+
+/*Configuração do Aside*/
+aside{
+   background-color:var(--cor1);
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+/*Configuração das LISTAS dentro do aside*/
+aside > ul{
+   list-style-position:inside; /*Marcadores das listas para o ladro de dentro*/
+   columns: 2; /*Divide a linha em duas colunas*/
+   list-style-type: '\2714\00a0\00a0';/*personaliza marcadores da lista 
+   extraido do site emogipedia (não compatível com todos os navegadores
+   com espaços. Observe os códigos (\00a0\00a0") definem dois espaços*/
+   
+}
+
+
+/*Configurando o h3 dentro do aside*/
+aside > h3{
+   background-color: var(--cor4);
+   color: white;
+   padding:10px;
+   margin: -10px -10px 0px -10px;
+   border-radius: 10px 10px 0px 0px;
+   
+}
+
 footer{
    background-color: var(--cor5);
    color:white;
+   text-align: center;
+   font-size: 0.8em;
+   padding: 5px;
+}
+
+/*Link do footer
+  Todo link dentro do parágrafo 
+  uma opção que pode usar além da que 
+  consta abaixo é:
+  "footer > p > a"
+*/
+footer > p > a{
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+
+}
+
+/*Efeito ao mover mouse sobre o link*/
+footer a:hover{
+   text-decoration: underline;
+   color: var(--cor1);
 }
