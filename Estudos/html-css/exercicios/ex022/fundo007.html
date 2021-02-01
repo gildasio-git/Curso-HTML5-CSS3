@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical</title>
+
+    <style>
+        #container{
+            /*para o alinhamento verfical dentro dos objetos do  container, este precisa estar como 
+            position:relative, apesar que todos os elementos em um box são relativos, apenas explicitando*/
+            position: relative;
+
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+
+            /*Apĺicanto imagem de fundo explicativa*/
+            background-image: url('imagens/target001.png');
+
+            /*aplicando um taamhno de 100% a imagem de fundo do background*/
+            background-size: 100% 100%;
+
+        }
+
+        #conteudo{
+            /*objeto "conteúdo" dentro  do "container" possui o alinhamento absoluno*/
+            position: absolute;
+
+            /*Quando espcifica um alinhamento ablsoludo de um objeto vocẽ poderá alterar as propriedades 
+            left 50%
+            top  50%
+            */
+            left: 50%;
+            top: 50%;
+
+            /*Centralizando a div "conteúdo' ao centro com a propriedade translate*/
+            transform: translate(-50%, -50%);
+
+            height: 200px;
+            background-color: yellow;
+            
+            width: 400px;
+            /*alinhamento horizontal apenas
+             margin: auto; 
+             */
+        }
+
+    </style>
+</head>
+<body>
+   <!--USANDO DIVs SEMÃNTICAS-->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+</body>
+</html>
