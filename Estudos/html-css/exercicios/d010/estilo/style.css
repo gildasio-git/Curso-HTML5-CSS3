@@ -75,6 +75,7 @@ header > p{
    padding-left: 10px;
    max-width: 500px; /*Determina largura máxima */
    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+   margin-bottom: 20px;
 
 }
 
@@ -86,6 +87,7 @@ header > h1{
    font-family: var(--fonte-padrao);
    font-size: 1,3em;
    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+   font-weight: normal;
   
   
 }
@@ -98,7 +100,7 @@ nav{
 
 /*Estilizando LINK dentro de nav*/
 nav > a{
-   color: white;
+   color: var(--cor1);
    padding: 10px;
    text-decoration: none;
    font-weight: bold;
@@ -131,6 +133,8 @@ main{
 main  h1{
    color:var(--cor5);
    font-family: var(--fonte-android);
+   font-weight: normal;
+   font-size: 1.8em;
 }
 
 main h2{
@@ -139,6 +143,7 @@ main h2{
    font-size: 1.3em;
    background-image: linear-gradient(to right, var(--cor1), transparent);
    text-indent: 10px;
+   font-weight: normal;
 }
 
 /*Configurando as imagens dentro do main*/
@@ -160,6 +165,31 @@ main img.pequena{
 
 }
 
+/*Configurando CLASSE VÍDEO */
+div.video{
+      background-color:var(--cor5);
+      margin-bottom: 30px;
+      margin:0px -20px 30px -20px; /*cola a div do vídeos as bordas*/
+      padding: 20px;
+      
+      /*configuração do posicionamento*/
+      position: relative;
+
+      /*removendo as barras pretas ao dar play no vídeo
+      basta ajustar o padding*/
+      padding-bottom: 58%;
+}
+
+
+/*Configurando o IFRAME que veio da url*/
+div.video > iframe{
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+
+}
 
 /*Configuração de parágrafo dentro do main em qualquer nível (não usar o main > P*/
 main p{
