@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
 
     <!--
         Aplicação Estilo
     -->
     <style>
        body{
-           height: 100vh;
+           height: 100vh;/*vh=view port*/
+           /*
            background-color: black;
            background-image: url("imagens/wallpaper002.jpeg");
 
            /*Corrigindo o posicionamento da imagem
-           devido não estar sobrindo o espaço todo*/
+           devido não estar sobrindo o espaço todo
            background-position: center center;
 
-           /*Removendo a repetição da imagem*/
+           /*Removendo a repetição da imagem
            background-repeat: no-repeat;
 
            /*Determinando um tabalhdo para seu 
@@ -31,13 +32,37 @@
            o espaço. Porém quando alterar o tamanho
            da janela a imagem ira achatando também
            o que é ruin. então use o parâmetro 
-           background:cover (cover=cobrir) */
+           background:cover (cover=cobrir) 
+           
+           background-size: cover; /*valor combinado com 
+           bakcground-attachment*/
+
+           /*Fixando a imagem de background (attachment)
+           background-attachment:
+           valores:
+                   scrool - tela rola com o conteúdo
+                   fixes - roda o conteudo mais a tela fica fixa
+           
+
+           background-attachment: fixed;
+           
+
+           /*shorthand (juntando todos os parâmetros
+           background
+           color > image > position > repeat > [size] 
+           > attachment
+           */
+
+           background:black url('imagens/wallpaper002.jpeg') center center no-repeat fixed; 
            background-size: cover;
+
+
        }
 
        main{
            background-color: white;
-           width: 400px;
+           max-width: 400px;/*conteúdo flexível para telas menores
+           determinando um Tamanho maximo (max-width*/
            padding: 10px;
            border:solid 1px darkblue;
            border-radius: 15px;
@@ -50,6 +75,30 @@
     <main>
         <h1>Teste de imagem de Fundo</h1>
         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum amet quia rem doloremque eum quae omnis doloribus quas! Est placeat pariatur dicta 
+            nihil minus quibusdam optio, cumque iusto harum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores delectus laudantium nisi quisquam error deleniti ea dolorum sint amet, odio esse vel deserunt obcaecati 
+            consectetur ullam corporis adipisci ipsa. Numquam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempora eligendi ipsum inventore error tempore natus, distinctio earum aut eius eum perferendis voluptate libero 
+            consectetur doloremque delectus atque iure quos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum amet quia rem doloremque eum quae omnis doloribus quas! Est placeat pariatur dicta 
+            nihil minus quibusdam optio, cumque iusto harum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores delectus laudantium nisi quisquam error deleniti ea dolorum sint amet, odio esse vel deserunt obcaecati 
+            consectetur ullam corporis adipisci ipsa. Numquam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempora eligendi ipsum inventore error tempore natus, distinctio earum aut eius eum perferendis voluptate libero 
+            consectetur doloremque delectus atque iure quos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum amet quia rem doloremque eum quae omnis doloribus quas! Est placeat pariatur dicta 
+            nihil minus quibusdam optio, cumque iusto harum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores delectus laudantium nisi quisquam error deleniti ea dolorum sint amet, odio esse vel deserunt obcaecati 
+            consectetur ullam corporis adipisci ipsa. Numquam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempora eligendi ipsum inventore error tempore natus, distinctio earum aut eius eum perferendis voluptate libero 
+            consectetur doloremque delectus atque iure quos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum amet quia rem doloremque eum quae omnis doloribus quas! Est placeat pariatur dicta 
+            nihil minus quibusdam optio, cumque iusto harum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores delectus laudantium nisi quisquam error deleniti ea dolorum sint amet, odio esse vel deserunt obcaecati 
+            consectetur ullam corporis adipisci ipsa. Numquam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempora eligendi ipsum inventore error tempore natus, distinctio earum aut eius eum perferendis voluptate libero 
+            consectetur doloremque delectus atque iure quos.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum amet quia rem doloremque eum quae omnis doloribus quas! Est placeat pariatur dicta 
             nihil minus quibusdam optio, cumque iusto harum.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores delectus laudantium nisi quisquam error deleniti ea dolorum sint amet, odio esse vel deserunt obcaecati 
