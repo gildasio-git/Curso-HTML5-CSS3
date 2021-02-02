@@ -4,13 +4,27 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em; /*Especifica tamanho padrão*/
 
+}
+
+/*Importando fontes do google*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+/*Criando varíaveis para as fontes a serem usadas*/
+:root{
+    --fonte1:Verdana, Geneva,Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
 }
 
 /*Definindo uma configuração comum para o HTML, BODY*/
 html, body{
     min-height: 100vh; /*Tamanho da view port 100%*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 /*Configurando o cabeçalho (HEADER)*/
@@ -32,6 +46,8 @@ header > h1{
     as primeiras letras ficam maiores
     */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4vw;/*10% da largura do viewport*/
 }
 
 
@@ -61,13 +77,14 @@ header a:hover, footer a:hover{
  paralax
 */
 section{
+    font-size: 3.5vw;
+    font-family: var(--fonte3); /*Generaliza as fontes para todas as sections*/
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em; /*Criando espaçamento entre as linhas*/
     padding-left: 30px;
 
 }
-
 
 
 /*Configurando a Section da classe NORMAL*/
@@ -86,8 +103,9 @@ section.imagem{
 de imagem */
 section.imagem p{
     background-color: rgba(0, 0, 0, 0.281);
-    width: 400px;
-}
+    display: inline-block; /*ajusta o tamanho do paragráfo ao
+    tamanho do conteúdo*/
+    padding-left: 5px;
 
 /*Configurando o rodape (FOOTER)*/
 footer{
