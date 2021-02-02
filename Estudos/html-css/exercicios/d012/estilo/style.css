@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*Resetando as MARGENS e PADDINGS*/
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*Definindo uma configuração comum para o HTML, BODY*/
+html, body{
+    min-height: 100vh; /*Tamanho da view port 100%*/
+    background-color: darkgray;
+}
+
+/*Configurando o cabeçalho (HEADER)*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+/*Configurando o H1 dentro do HEADER*/
+header > h1{
+    padding-top: 50px;
+
+    /*Alterando letras H1 para maiusculas
+    pode usar :
+    text-transform:uppercase
+    font-variant: small-caps; (cotinua letras maiusculas porém
+    as primeiras letras ficam maiores
+    */
+    font-variant: small-caps;
+}
+
+
+/*Configurando o parágrafo dentro do CABECALHO*/
+header > p{ 
+    padding-bottom: 50px;
+}
+
+
+/*Configurando o link para toda a página*/
+a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+/*Configurando o efeito do link ao mover o mouse sobre o mesmo*/
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+
+/*Configuração geral para todas as sections
+ criando um padding para vh de 10% para gerar o espaço para o efeito 
+ paralax
+*/
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Criando espaçamento entre as linhas*/
+    padding-left: 30px;
+
+}
+
+
+
+/*Configurando a Section da classe NORMAL*/
+section.normal{
+    background-color: white;
+    color:black;
+}
+
+/*Configurando a Section da classe IMAGEM*/
+section.imagem{
+    background-color:rgba(0, 0, 0, 0.479);
+    color:white
+}
+
+/*Configurando o parágrafo que estiver dentro da section 
+de imagem */
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 400px;
+}
+
+/*Configurando o rodape (FOOTER)*/
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding:10px;
+}
