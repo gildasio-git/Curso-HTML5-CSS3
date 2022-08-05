@@ -1,0 +1,55 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+menu ul{
+    list-style-type: none;
+      
+}
+
+menu li{
+    display: inline-block;
+    padding: 15px;
+    background-color: darkgray;
+   
+
+}
+
+menu li:hover{
+    box-shadow: 1px 1px 1px 1px  rgb(117, 112, 112);
+    background-color: aqua;
+}
+
+menu li a{
+  color: black;
+  text-decoration: none;
+
+ }
+
+ menu li a:hover{
+    color: rgb(66, 13, 13);
+    
+   }
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+article > p{
+    line-height: 25px;
+}
+
+header{
+    margin-bottom: 20px;
+}
